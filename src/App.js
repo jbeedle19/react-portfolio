@@ -31,7 +31,9 @@ function App() {
           {renderSection(currentNavSection)}
         </div>
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
