@@ -4,11 +4,6 @@ function Nav() {
 
     return (
         <header>
-            <h2>
-                <a href='/'>
-                    Beedle
-                </a>
-            </h2>
             <nav>
                 <ul>
                     <li>
