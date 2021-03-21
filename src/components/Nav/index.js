@@ -4,7 +4,7 @@ function Nav(props) {
     const navSections = ['About Me', 'Portfolio', 'Contact', 'Resume'];
 
     return (
-        <section>
+        <header>
             <nav>
                 <ul>
                     {navSections.map(section => (
@@ -20,7 +20,7 @@ function Nav(props) {
                     ))}
                 </ul>
             </nav>
-        </section>
+        </header>
     );
 }
 

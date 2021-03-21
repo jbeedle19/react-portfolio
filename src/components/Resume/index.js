@@ -3,9 +3,9 @@ import React from 'react';
 function Resume() {
 
     return (
-        <section>
+        <section className='contact-section'>
             <div>
-                <h2>Resume</h2>
+                <h2 className='section-title secondary-border'>Resume</h2>
                 <p>Download My <a>Resume!</a></p>
             </div>
             <div>
