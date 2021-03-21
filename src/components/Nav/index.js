@@ -1,27 +1,27 @@
 import React, { useEffect } from 'react';
 
-function Nav() {
+function Nav(props) {
+    const navSections = ['About Me', 'Portfolio', 'Contact', 'Resume'];
 
     return (
-        <header>
+        <section>
             <nav>
                 <ul>
-                    <li>
-                        <a href='#about'>About Me</a>
-                    </li>
-                    <li>
-                        <a href='#portfolio'>Portfolio</a>
-                    </li>
-                    <li>
-                        <a href='#contact'>Contact Me</a>
-                    </li>
-                    <li>
-                        <a href='#resume'>Resume</a>
-                    </li>
+                    {navSections.map(section => (
+                        <li key={section}>
+                            <a
+                                href={'#' + section.toLowerCase()}
+                                onClick={() => props.handleSectionChange(section)}
+
+                            >
+                                {section}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
-        </header>
-    )
+        </section>
+    );
 }
 
 export default Nav;

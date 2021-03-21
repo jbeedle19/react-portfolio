@@ -8,16 +8,27 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const [currentNavSection, handleSectionChange] = useState('About Me');
+
+  const renderSection = () => {
+    switch (currentNavSection) {
+      case 'Portfolio': return <Portfolio />;
+      case 'Contact': return <ContactForm />;
+      case 'Resume': return <Resume />;
+      default: return <About />;
+    }
+  };
+
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav
+        currentNavSection={currentNavSection}
+        handleSectionChange={handleSectionChange}
+      ></Nav>
       <main>
         <div>
-          <About />
-          <Portfolio />
-          <Resume />
-          <ContactForm />
+          {renderSection(currentNavSection)}
         </div>
       </main>
       <Footer />
