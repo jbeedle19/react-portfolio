@@ -43,15 +43,15 @@ function ContactForm() {
             <Form id='contact-form' onSubmit={handleSubmit}>
                 <Form.Group>
                     <Form.Label htmlFor='name'>Name:</Form.Label>
-                    <Form.Control type='text' defaultValue={name} onBlur={handleChange} name='name' className='w-75' />
+                    <Form.Control type='text' defaultValue={name} onBlur={handleChange} name='name' className='form' />
                 </Form.Group>
                 <Form.Group>
                     <Form.Label htmlFor='email'>Email Address:</Form.Label>
-                    <Form.Control type='email' defaultValue={email} onBlur={handleChange} name='email' className='w-75' />
+                    <Form.Control type='email' defaultValue={email} onBlur={handleChange} name='email' className='form' />
                 </Form.Group>
                 <Form.Group>
                     <Form.Label htmlFor='message'>Message:</Form.Label>
-                    <Form.Control as="textarea" name='message' defaultValue={message} onBlur={handleChange} rows={5} className='w-75' />
+                    <Form.Control as="textarea" name='message' defaultValue={message} onBlur={handleChange} rows={5} className='formMessage' />
                     {errorMessage && (
                         <div>
                             <p>{errorMessage}</p>
