@@ -23,8 +23,8 @@ function App() {
     <div>
       <Header />
       <Nav
-        currentNavSection={currentNavSection}
-        handleSectionChange={handleSectionChange}
+          currentNavSection={currentNavSection}
+          handleSectionChange={handleSectionChange}
       ></Nav>
       <main>
         <div>

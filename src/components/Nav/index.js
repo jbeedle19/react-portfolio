@@ -12,7 +12,6 @@ function Nav(props) {
                             <a
                                 href={'#' + section.toLowerCase()}
                                 onClick={() => props.handleSectionChange(section)}
-
                             >
                                 {section}
                             </a>
