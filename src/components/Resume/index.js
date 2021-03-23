@@ -1,6 +1,7 @@
 import React from 'react';
 import pdf from '../../assets/images/JoshuaBeedleResume.pdf';
 import ListGroup from 'react-bootstrap/ListGroup';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 function Resume() {
     const frontEndProficiencies = ["HTML", "CSS", "JavaScript", "jQuery", "React", "Bootstrap, Tailwind, Material-UI", "Responsive Design"];
@@ -10,7 +11,7 @@ function Resume() {
         <section className='contact-section'>
             <div>
                 <h2 className='section-title secondary-border'>Resume</h2>
-                <p>Download My <a target="_blank" rel="noreferrer" href={pdf}>Resume</a></p>
+                <p>Download My Resume | <a target="_blank" rel="noreferrer" href={pdf}><DescriptionIcon /></a></p>
             </div>
             <div>
                 <h3>Front-end Proficiencies</h3>
