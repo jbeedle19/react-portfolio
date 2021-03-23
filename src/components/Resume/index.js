@@ -1,5 +1,6 @@
 import React from 'react';
 import pdf from '../../assets/images/JoshuaBeedleResume.pdf';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function Resume() {
 
@@ -11,27 +12,27 @@ function Resume() {
             </div>
             <div>
                 <h3>Front-end Proficiencies</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>React</li>
-                    <li>Bootstrap, Tailwind, Material-UI</li>
-                    <li>Responsive Design</li>
-                </ul>
+                <ListGroup variant="flush">
+                    <ListGroup.Item>HTML</ListGroup.Item>
+                    <ListGroup.Item>CSS</ListGroup.Item>
+                    <ListGroup.Item>JavaScript</ListGroup.Item>
+                    <ListGroup.Item>jQuery</ListGroup.Item>
+                    <ListGroup.Item>React</ListGroup.Item>
+                    <ListGroup.Item>Bootstrap, Tailwind, Material-UI</ListGroup.Item>
+                    <ListGroup.Item>Responsive Design</ListGroup.Item>
+                </ListGroup>
             </div>
             <div>
                 <h3>Back-end Proficiencies</h3>
-                <ul>
-                    <li>APIs</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>MySQL, Sequelize</li>
-                    <li>MongoDB, Mongoose</li>
-                    <li>REST</li>
-                    <li>GraphQL</li>
-                </ul>
+                <ListGroup variant="flush">
+                    <ListGroup.Item>APIs</ListGroup.Item>
+                    <ListGroup.Item>Node</ListGroup.Item>
+                    <ListGroup.Item>Express</ListGroup.Item>
+                    <ListGroup.Item>MySQL & Sequelize</ListGroup.Item>
+                    <ListGroup.Item>MongoDB & Mongoose</ListGroup.Item>
+                    <ListGroup.Item>REST</ListGroup.Item>
+                    <ListGroup.Item>GraphQL</ListGroup.Item>
+                </ListGroup>
             </div>
         </section>
     )

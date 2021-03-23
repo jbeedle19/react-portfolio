@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { Form, Button } from 'react-bootstrap';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -39,26 +40,26 @@ function ContactForm() {
             <h2 className='section-title primary-border'>
                 Contact Me
             </h2>
-            <form id='contact-form' onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor='name'>Name:</label>
-                    <input type='text' defaultValue={name} onBlur={handleChange} name='name' />
-                </div>
-                <div>
-                    <label htmlFor='email'>Email Address:</label>
-                    <input type='email' defaultValue={email} onBlur={handleChange} name='email' />
-                </div>
-                <div>
-                    <label htmlFor='message'>Message:</label>
-                    <textarea name='message' defaultValue={message} onBlur={handleChange} rows='5' />
+            <Form id='contact-form' onSubmit={handleSubmit}>
+                <Form.Group>
+                    <Form.Label htmlFor='name'>Name:</Form.Label>
+                    <Form.Control type='text' defaultValue={name} onBlur={handleChange} name='name' />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor='email'>Email Address:</Form.Label>
+                    <Form.Control type='email' defaultValue={email} onBlur={handleChange} name='email' />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor='message'>Message:</Form.Label>
+                    <Form.Control as="textarea" name='message' defaultValue={message} onBlur={handleChange} rows={5} />
                     {errorMessage && (
                         <div>
                             <p>{errorMessage}</p>
                         </div>
                     )}
-                    <button type='submit'>Submit</button>
-                </div>
-            </form>
+                    <Button variant='primary' type='submit'>Submit</Button>
+                </Form.Group>
+            </Form>
         </section>
     )
 }
