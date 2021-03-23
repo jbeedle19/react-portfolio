@@ -3,6 +3,8 @@ import pdf from '../../assets/images/JoshuaBeedleResume.pdf';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 function Resume() {
+    const frontEndProficiencies = ["HTML", "CSS", "JavaScript", "jQuery", "React", "Bootstrap, Tailwind, Material-UI", "Responsive Design"];
+    const backEndProficiencies = ["APIs", "Node", "Express", "MySQL & Sequelize", "MongoDB & Mongoose", "REST", "GraphQL"];
 
     return (
         <section className='contact-section'>
@@ -12,26 +14,26 @@ function Resume() {
             </div>
             <div>
                 <h3>Front-end Proficiencies</h3>
-                <ListGroup variant="flush">
-                    <ListGroup.Item>HTML</ListGroup.Item>
-                    <ListGroup.Item>CSS</ListGroup.Item>
-                    <ListGroup.Item>JavaScript</ListGroup.Item>
-                    <ListGroup.Item>jQuery</ListGroup.Item>
-                    <ListGroup.Item>React</ListGroup.Item>
-                    <ListGroup.Item>Bootstrap, Tailwind, Material-UI</ListGroup.Item>
-                    <ListGroup.Item>Responsive Design</ListGroup.Item>
+                <ListGroup variant="flush" className="my-3">
+                    {frontEndProficiencies.map((context) => {
+                        return <ListGroup.Item 
+                            key={context}
+                            className="bg-primary w-50 ml-5">
+                        * {context}
+                        </ListGroup.Item>
+                    })}
                 </ListGroup>
             </div>
             <div>
                 <h3>Back-end Proficiencies</h3>
-                <ListGroup variant="flush">
-                    <ListGroup.Item>APIs</ListGroup.Item>
-                    <ListGroup.Item>Node</ListGroup.Item>
-                    <ListGroup.Item>Express</ListGroup.Item>
-                    <ListGroup.Item>MySQL & Sequelize</ListGroup.Item>
-                    <ListGroup.Item>MongoDB & Mongoose</ListGroup.Item>
-                    <ListGroup.Item>REST</ListGroup.Item>
-                    <ListGroup.Item>GraphQL</ListGroup.Item>
+                <ListGroup variant="flush" className='my-3'>
+                    {backEndProficiencies.map((context) => {
+                        return <ListGroup.Item 
+                            key={context}
+                            className="bg-primary w-50 ml-5">
+                        * {context}
+                        </ListGroup.Item>
+                    })}
                 </ListGroup>
             </div>
         </section>
