@@ -10,8 +10,10 @@ function Resume() {
     return (
         <section className='contact-section'>
             <div>
-                <h2 className='section-title secondary-border'>Resume</h2>
-                <p>Download My Resume | <a target="_blank" rel="noreferrer" href={pdf}><DescriptionIcon /></a></p>
+                <h2 className='section-title primary-border'>Resume</h2>
+            </div>
+            <div>
+                <h3 className="resume">Download My Resume | <a className="resume" target="_blank" rel="noreferrer" href={pdf}><DescriptionIcon fontSize="large"/></a></h3>
             </div>
             <div>
                 <h3>Front-end Proficiencies</h3>
@@ -19,7 +21,8 @@ function Resume() {
                     {frontEndProficiencies.map((context) => {
                         return <ListGroup.Item 
                             key={context}
-                            className="bg-primary w-50 ml-5">
+                            style={{backgroundColor: '#7389ae'}}
+                            className="w-50 ml-5">
                         * {context}
                         </ListGroup.Item>
                     })}
@@ -31,7 +34,8 @@ function Resume() {
                     {backEndProficiencies.map((context) => {
                         return <ListGroup.Item 
                             key={context}
-                            className="bg-primary w-50 ml-5">
+                            style={{backgroundColor: '#7389ae'}}
+                            className="w-50 ml-5">
                         * {context}
                         </ListGroup.Item>
                     })}

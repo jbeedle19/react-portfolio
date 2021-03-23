@@ -8,9 +8,9 @@ function Footer() {
     return (
         <section>
             <div>
-                <a className="mx-2" target="_blank" rel="noreferrer" href="https://github.com/jbeedle19"><GitHubIcon fontSize="large" /></a>
-                <a className="mx-2" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joshua-beedle/"><LinkedInIcon fontSize="large" /></a>
-                <a className="mx-2" href="mailto:josh.beedle@gmail.com"><EmailIcon fontSize="large" /></a>
+                <a className="icon" target="_blank" rel="noreferrer" href="https://github.com/jbeedle19"><GitHubIcon fontSize="large" /></a>
+                <a className="icon" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joshua-beedle/"><LinkedInIcon fontSize="large" /></a>
+                <a className="icon" href="mailto:josh.beedle@gmail.com"><EmailIcon fontSize="large" /></a>
             </div>
         </section>
     )

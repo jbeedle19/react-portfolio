@@ -3,9 +3,9 @@ import React from 'react';
 function Portfolio() {
 
     return(
-        <section id="work" className="work-section">
+        <section id="work" className="contact-section">
             <div className="flex-row">
-                <h2 className="section-title secondary-border">
+                <h2 className="section-title primary-border">
                     Work
                 </h2>
             </div>
