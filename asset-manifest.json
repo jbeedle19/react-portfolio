@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.09dcb53f.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.c96d762e.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.c96d762e.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.1c5f994c.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.1c5f994c.js.map",
+    "static/js/2.c7356af8.chunk.js": "/react-portfolio/static/js/2.c7356af8.chunk.js",
+    "static/js/2.c7356af8.chunk.js.map": "/react-portfolio/static/js/2.c7356af8.chunk.js.map",
+    "static/js/3.9461efa6.chunk.js": "/react-portfolio/static/js/3.9461efa6.chunk.js",
+    "static/js/3.9461efa6.chunk.js.map": "/react-portfolio/static/js/3.9461efa6.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.09dcb53f.chunk.css.map": "/react-portfolio/static/css/main.09dcb53f.chunk.css.map",
+    "static/js/2.c7356af8.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.c7356af8.chunk.js.LICENSE.txt",
+    "static/media/JoshuaBeedleResume.05e6acc1.pdf": "/react-portfolio/static/media/JoshuaBeedleResume.05e6acc1.pdf",
+    "static/media/fridge.0a541275.svg": "/react-portfolio/static/media/fridge.0a541275.svg",
+    "static/media/headshot.25de78e3.jpg": "/react-portfolio/static/media/headshot.25de78e3.jpg",
+    "static/media/movers-not-shakers.e2fa624c.jpg": "/react-portfolio/static/media/movers-not-shakers.e2fa624c.jpg",
+    "static/media/weather-favicon.5bce3243.png": "/react-portfolio/static/media/weather-favicon.5bce3243.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c5f994c.js",
+    "static/js/2.c7356af8.chunk.js",
+    "static/css/main.09dcb53f.chunk.css",
+    "static/js/main.c96d762e.chunk.js"
+  ]
+}
