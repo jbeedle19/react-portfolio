@@ -8,11 +8,11 @@ function Nav(props) {
             <ul>
                 {navSections.map(section => (
                     <li key={section}>
-                        <a
+                        <button
                             onClick={() => props.handleSectionChange(section)}
                         >
                             {section}
-                        </a>
+                        </button>
                     </li>
                 ))}
             </ul>

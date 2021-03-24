@@ -45,12 +45,15 @@ header nav ul {
   margin-top: 10px;
   width: 100%;
 }
-header nav ul a {
+header nav ul button {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: var(--light-cyan);
 }
-header nav ul a:hover {
+header nav ul button:hover {
   text-decoration: none;
   background: var(--green);
   color: var(--dark-blue);

@@ -6,9 +6,7 @@ function Header({ currentNavSection, handleSectionChange }) {
     return (
         <header>
             <h1>
-                <a href={process.env.PUBLIC_URL} className='name'>
-                    Beedle
-                </a>
+                Beedle
             </h1>
             <Nav
                 currentNavSection={currentNavSection}
