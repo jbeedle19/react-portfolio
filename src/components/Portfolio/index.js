@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from '../Project';
 
 function Portfolio() {
 
@@ -9,7 +10,7 @@ function Portfolio() {
                     Work
                 </h2>
             </div>
-            
+            <Project />
             <div className="work-grid-wrapper">
                 <div className="work-grid-container">
                     <div className="work-grid-item fridge">
