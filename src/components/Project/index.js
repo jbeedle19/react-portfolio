@@ -2,6 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
+import IconButton from '@material-ui/core/IconButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import fridgeImage from '../../assets/images/fridge.svg';
 import moversImage from '../../assets/images/movers-not-shakers.jpg';
@@ -22,6 +25,13 @@ function Project() {
             width: 500,
             height: 450,
         },
+        title: {
+            color: '#7389ae',
+        },
+        titleBar: {
+            background:
+                'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+        }
     }));
 
     const classes = useStyles();
@@ -65,6 +75,18 @@ function Project() {
             {projectData.map((project) => (
                 <GridListTile key={project.title} cols={project.cols || 1}>
                     <img src={project.img} alt={project.title} />
+                    <GridListTileBar 
+                        title={project.title}
+                        classes={{
+                            root: classes.titleBar,
+                            title: classes.title,
+                        }}
+                        actionIcon={
+                            <IconButton aria-label={`GitHub ${project.title}`}>
+                                <GitHubIcon className={classes.title} />
+                            </IconButton>
+                        }
+                    />
                 </GridListTile>
             ))}
             </GridList>
