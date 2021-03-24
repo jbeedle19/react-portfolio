@@ -6,7 +6,7 @@ function Header({ currentNavSection, handleSectionChange }) {
     return (
         <header>
             <h1>
-                <a href='/react-portfolio/' className='name'>
+                <a href={process.env.PUBLIC_URL} className='name'>
                     Beedle
                 </a>
             </h1>

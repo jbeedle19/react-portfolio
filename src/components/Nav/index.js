@@ -9,7 +9,6 @@ function Nav(props) {
                 {navSections.map(section => (
                     <li key={section}>
                         <a
-                            href={'#' + section.toLowerCase()}
                             onClick={() => props.handleSectionChange(section)}
                         >
                             {section}
