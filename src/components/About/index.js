@@ -18,7 +18,7 @@ function About() {
                         Full-stack web developer with a background in teaching and customer service 
                         looking to create unique user experiences on the web. Earned a certificate in 
                         full-stack web development from the University of Pennsylvania, with skills 
-                        in HTML, CSS, Git, JavaScript, and responsive web design. 
+                        in HTML, CSS, JavaScript, MERN stack, MySql, and responsive web design. 
                         <br />
                         <br />
                         Quick learner that is calm under pressure and has excellent time management 

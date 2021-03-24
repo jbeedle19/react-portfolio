@@ -56,6 +56,12 @@ header nav ul a:hover {
   color: var(--dark-blue);
   border-radius: 15px;
 }
+.name:hover {
+  text-decoration: none;
+  background: var(--green);
+  color: var(--dark-blue);
+  border-radius: 15px;
+}
 /* Header and Nav Style End */
 
 /* Shared Style Start */

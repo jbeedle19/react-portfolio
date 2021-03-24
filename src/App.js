@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
@@ -21,11 +20,10 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <Nav
+      <Header 
           currentNavSection={currentNavSection}
           handleSectionChange={handleSectionChange}
-      ></Nav>
+      />
       <main>
         <div>
           {renderSection(currentNavSection)}

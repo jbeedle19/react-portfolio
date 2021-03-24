@@ -1,14 +1,19 @@
 import React from 'react';
+import Nav from '../Nav';
 
-function Header() {
+function Header({ currentNavSection, handleSectionChange }) {
 
     return (
         <header>
-            <h2>
-                <a href='/'>
+            <h1>
+                <a href='/' className='name'>
                     Beedle
                 </a>
-            </h2>
+            </h1>
+            <Nav
+                currentNavSection={currentNavSection}
+                handleSectionChange={handleSectionChange}
+            ></Nav>
         </header>
     )
 }
