@@ -7,4 +7,4 @@ A website that showcases Joshua Beedle's professional portfolio.
 # Website
 https://jbeedle19.github.io/react-portfolio/
 # Walkthrough
-![Walkthrough](walkthrough.gif)
+![Walkthrough](./src/assets/images/walkthrough.gif)
