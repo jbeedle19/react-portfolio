@@ -5,6 +5,6 @@ A website that showcases Joshua Beedle's professional portfolio.
 * React
 * HTML, CSS, JavaScript
 # Website
-placeholder
+https://jbeedle19.github.io/react-portfolio/
 # Walkthrough
 ![Walkthrough](walkthrough.gif)
